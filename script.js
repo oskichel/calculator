@@ -147,7 +147,11 @@ document.querySelector('.container').onclick = (event) => {
         }
         
         finish = true;
-        out.textContent = Number(a).toFixed(8).replace(/0*$/,"");
+        a = a.toString();
+        if (a.endsWith('.')) {
+            return out.textContent = Number(a).slice(-1);
+        } else out.textContent = Number(a).toFixed(8).replace(/0*$/,"");
+
         console.log(a, b, sign);
     }
 };
