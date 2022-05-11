@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'),
+        url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arial'),
+        url(fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+html {
+    font-size: 10px;
+}
+
+.wrapper {
+    width: 410px;
+    height: 740px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #3D3D3D 0%, #72727F 100%);
+    mix-blend-mode: overlay;
+    border-radius: 20px;
+}
+
+.output {
+    width: 373px;
+    height: 219px;
+    margin: 30px auto;
+    border-radius: 0px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7rem;
+    text-align: right;
+    line-height: 219px;
+}
+
+.calculator__input {
+    height: 445px;
+    padding: 22px 30px;
+    background: linear-gradient(180deg, #3D3D3D 0%, #72727F 100%);
+    mix-blend-mode: overlay;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.container {
+    width: 350px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px 35px;
+}
+
+.button {
+    width: 61px;
+    height: 62px;
+    color: #ffffff;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 62px;
+}
+
+.button_long {
+    width: 157px;
+}
+
+.button_blue {
+    border: none;
+    border-radius: 12px;
+    background-color: #9b9bba;
+}
+
+.button_blue:active {
+    border: 1px solid #6f6f8f;
+    background-color: #6f6f8f;
+}
+
+.button_grey {
+    background-color: #41434A;
+    border: none;
+    border-radius: 30px;
+}
+
+.button_grey:active {
+    border: 1px solid #313236;
+    background-color: #313236;
+}
